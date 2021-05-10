@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai University CGPA Converter</title>
+
+ <script>
+   function calculate(total){
+      var totalsum = 0
+      
+total.forEach(element => {
+        totalsum = totalsum + element 
+      });
+      var avg = totalsum / sem
+      var percent
+      if(avg<=7){
+         percent = avg*8.8
+      }
+      else{
+         percent = avg*8.8
+      }   
+      alert("Average CGPA is "+String(avg))
+      alert("Percentage is "+String(percent))
+   }
+   var total = []
+   var sem = parseInt(prompt("Enter Number of Semesters : "))
+   for(var i=0;i<sem;i++){
+      var marks = parseFloat(prompt("Enter CGPA of Sem "+String(i+1)))
+      total.push(marks)
+   }
+
+   calculate(total)
+
+
+
+ </script>   
+
+</head>
+
+<body style="align-content: center;">
+   
+<h1>Designed by OMKAR D</h1>
+   
+
+</body>
+
+</html>
+
